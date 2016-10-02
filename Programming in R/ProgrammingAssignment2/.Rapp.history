@@ -1,0 +1,250 @@
+length(my_vector)
+dim(my_vector) <- c(4,5)
+dim(my_vector_
+)
+dim(my_vector)
+attributes(my_vector)
+my_vector
+class(my_vector)
+my_matrix <- my_vector
+?matrix
+my_matrix2 <- matrix(1:20, 4, 5)
+identical(my_matrix,my_matrix2)
+patients <- c("Bill", "Gina","Kelly", "Sean")
+cbind(patients,my_matrix)
+my_data <- data.frame(patients,my_matrix)
+my_data
+class(my)data
+class(my_data)
+cnames <- ("patient", "age", "weight", "bp", "rating", "test")
+cnames <- c("patient", "age", "weight", "bp", "rating", "test")
+colnames(my_data) <- cnames
+my_data
+y <- if(T){ 10 }
+y
+x <- c("a", "b", "c", "d")
+for (i in seq_along(x){ print x[i] }
+for (i in seq_along(x)){ print x[i] }
+for (i in seq_along(x)){ print(x[i]) }
+for (letter in x){ print(letter) }
+make.power <- function(n) {}
+swirl()
+library("swirl")
+swirl()
+==
+T == T
+True == True
+TRUE == TRUE
+FALSE == FALSE
+(FALSE == TRUE) == FALSE
+6 == 7
+6 < 7
+10 <= 10
+5 != 7
+! 5 == 7
+FALSE & FALSE
+TRUE & c(TRUE, FALSE, FALSE)
+TRUE && c(TRUE, FALSE, FALSE)
+TRUE | c(TRUE, FALSE, FALSE)
+TRUE || c(TRUE, FALSE, FALSE)
+5 > 8 || 6 != 8 && 4 > 3.9
+isTRUE(6 > 4)
+identical('twins','twins')
+xor(5==6, !FALSE)
+ints <- sample(10)
+ints
+ints > 5
+which(ints > 7)
+any(ints < 0)
+all(ints >0 )
+any(c(TRUE, TRUE, FALSE))
+library("swirl")
+swirl()
+Sys.Date()
+mean(c(2, 4 ,5))
+submit()
+boring_function("My first function!")
+boring_function
+submit()
+my_mean(c(4,5,10))
+submit()
+remainder(5)
+remainder(11,5)
+remainder(divisor = 11, num = 5)
+remainder(4, div = 2)
+args(remainder)
+submit()
+evaluate(sd, c(1.4,3.6,7.9,8.8))
+evaluate(function(x){x+1}, 6)
+evaluate(function(x){x[[1]]}, c(8,4,0))
+evaluate(function(x){x[[-1]]}, c(8,4,0))
+evaluate(function(x){tail(x,1)}, c(8,4,0))
+?paste
+paste("Programming", "is", "fun!")
+submit()
+telegram("Hello World")
+submit()
+mad_libs("home","flies","cat")
+submit()
+I %p% love %p% R
+'I' %p% 'love' %p% 'R'
+'I' %p% 'love' %p% 'R!'
+x <- 1:4
+lapply(x, runif)
+set.seed(933)
+lapply(x, runif)
+set.seed(934)
+lapply(x, runif)
+set.seed(933)
+lapply(x, runif)
+rep("male",20)
+gender <- c(rep("male,20"), rep("female",20))
+gender <- c(rep("male,20"), rep("female",30))
+gender <- factor(gender)
+gender
+gender <- c(rep("male",20), rep("female",30))
+gender <- factor(gender)
+gender
+summary(gender)
+gender <- c(rep("male",20), rep("female",30), rep("homo", 10))
+summary(gender)
+gender <- factor(gender)
+summary(gender)
+x <- matrix(rnorm(200), 20, 10)
+x
+apply(x, 2, mean)
+apply(x, 1, mean)
+rowsums(x)
+rowSums(x)
+colSums(x)
+colMean(x)
+colMeans(x)
+apply(x, 1, quantile, probs = c(0.25, 0.75))
+a <- array(rnorm(2 * 2 * 10), c(2,2,10))
+a
+summary(a)
+str(a)
+apply(a, c(1,2), mean)
+mapply(rep, 1:4, 4:1)
+runif(10)
+library("swirl")
+swirl()
+head(flags)
+dim(flags)
+viewinfo()
+class(flags)
+cls_list <- lapply(flags, class)
+cls-list
+cls_list
+class(cls_list)
+as.character(cls_list)
+cls_vect <- sapply(flags, class)
+class(cls_vect)
+sum(flags$orange)
+flags_color <- flags[, 11:17]
+flag_colors <- flags[, 11:17]
+head(flags_color)
+head()
+head(flag_colors)
+lappy(flag_colors, sum)
+lapply(flag_colors, sum)
+sapply(flag_colors, sum)
+sapply(flag_colors, mean)
+flag_shapes <- flags(, 19:23)
+flag_shapes <- flags[], 19:23]
+flag_shapes <- flags[, 19:23]
+lapply(flag_shapes, range)
+shape_mat <- sapply(flag_shapes, range)
+shape_mat
+class(shape_mat)
+unique(c(3, 4, 5, 5, 5, 6, 6))
+lapply(flags, unique)
+unique_val <- lapply(flags, unique)
+unique_vals <- lapply(flags, unique)
+unique_vals
+sapply(unique_vals, length)
+sapply(flags, unique)
+lappy(unique_vals, function(elem) elem[2])
+lapply(unique_vals, function(elem) elem[2])
+sapply(flags, unique)
+vapply(flags, unique, numeric(1))
+ok()
+sapply(flags, class)
+vapply(flags, class, character(1))
+?tapply
+table(flags$landmass)
+table(flags$animate)
+tapply(flags$animate, flags$landmass, mea)
+tapply(flags$animate, flags$landmass, mean)
+tapply(flags$population, flags$red, summary)
+tapply(flags$population, flags$landmass, summary)
+data(iris)
+?iris
+summary(iris)
+str(iris)
+head(iris)
+tapply(iris$Sepal.Length, iris$Species)
+tapply(iris$Sepal.Length, iris$Species, mean)
+round(tapply(iris$Sepal.Length, iris$Species, mean),0)
+colMeans(iris)
+rowMeans(iris[,1:4])
+apply(iris[,1:4], 1, mean)
+apply(iris[,1:4], 2, mean)
+colMeans(iris[,1:4])
+data(mtcars)
+str(mtcards)
+str(mtcars)
+?mtcards
+?mtcars
+head(mtcars)
+mean(mtcars$mpg, mtcars$cyl)
+sapply(mtcars, cyl, mean)
+sapply(split(mtcars$mpg, mtcars$cyl), mean)
+unique(mtcars$cyl)
+with(mtcars, tapply(mpg, cyl, mean))
+split(mtcars, mtcars$cyl)
+tapply(mtcars$cyl, mtcars$mpg, mean)
+tapply(mtcars$mpg, mtcars$cyl, mean)
+apply(mtcars, 2, mean)
+apply(mtcars, 1, mean)
+tapply(mtcars$hp, mtcars$cyl, mean)
+hp_by_cyl <- tapply(mtcars$hp, mtcars$cyl, mean),0)
+hp_by_cyl <- round(tapply(mtcars$hp, mtcars$cyl, mean),0)
+hp_by_cyl
+hp_by_cyl[3] - hp_by_cl[1]
+hp_by_cyl[3] - hp_by_cyl[1]
+debug(ls)
+ls
+ls()
+n
+n
+end
+n
+n
+n
+getwd()
+source("cachematrix.R")
+ls()
+n
+n
+n
+n
+n
+n
+dir()
+square.matrix <- matrix(c(1,0,3,2,2,4,3,2,1),ncol=3)
+square.matrix
+solve(square.matrix)
+debug
+n
+n
+n
+n
+n
+n
+n
+n
+n
+n
+n
+n
